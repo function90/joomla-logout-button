@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.1" type="plugin" group="system" method="upgrade">
+	<name>plg_system_f90logout</name>
+	<author>Function90</author>
+	<creationDate>Oct 2013</creationDate>
+	<copyright>(C) 2013 Fucntion90.com. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>dev.fucntion90@gmail.com</authorEmail>
+	<authorUrl>www.function90.com</authorUrl>
+	<version>0.0.1</version>
+	<description>PLG_SYSTEM_F90LOGOUT_XML_DESCRIPTION</description>
+
+	<files>
+		<filename plugin="f90logout">f90logout.php</filename>
+		<filename>index.html</filename>
+		<folder>tmpl</folder>
+	</files>
+	<languages>
+		<language tag="en-GB">en-GB.plg_system_f90logout.ini</language>
+		<language tag="en-GB">en-GB.plg_system_f90logout.sys.ini</language>
+	</languages>
+	
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field
+					name="logout_return"
+					type="menuitem"
+					disable="separator"
+					label="PLG_SYSTEM_F90LOGOUT_FIELD_LOGOUT_REDIRECTURL_LABEL"
+					description="PLG_SYSTEM_F90LOGOUT_FIELD_LOGOUT_REDIRECTURL_DESC" >
+					<option	value="">JDEFAULT</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>
